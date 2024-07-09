@@ -37,6 +37,7 @@ public class GUI extends javax.swing.JFrame {
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -60,12 +61,32 @@ public class GUI extends javax.swing.JFrame {
         jMenuItem22 = new javax.swing.JMenuItem();
         jMenuItem23 = new javax.swing.JMenuItem();
         jMenuItem24 = new javax.swing.JMenuItem();
-        jMenuItem25 = new javax.swing.JMenuItem();
         jMenuItem26 = new javax.swing.JMenuItem();
-        jMenu7 = new javax.swing.JMenu();
+        jMenuItem25 = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
+        jMenuItem32 = new javax.swing.JMenuItem();
+        jMenuItem33 = new javax.swing.JMenuItem();
+        jMenuItem34 = new javax.swing.JMenuItem();
+        jMenuItem35 = new javax.swing.JMenuItem();
+        jMenuItem40 = new javax.swing.JMenuItem();
         jMenu13 = new javax.swing.JMenu();
+        jMenuItem37 = new javax.swing.JMenuItem();
+        jMenuItem38 = new javax.swing.JMenuItem();
+        jMenuItem39 = new javax.swing.JMenuItem();
+        jMenuItem41 = new javax.swing.JMenuItem();
+        jMenuItem36 = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuItem27 = new javax.swing.JMenuItem();
+        jMenuItem28 = new javax.swing.JMenuItem();
+        jMenuItem29 = new javax.swing.JMenuItem();
+        jMenuItem30 = new javax.swing.JMenuItem();
+        jMenuItem31 = new javax.swing.JMenuItem();
         jMenu14 = new javax.swing.JMenu();
+        jMenuItem42 = new javax.swing.JMenuItem();
+        jMenuItem44 = new javax.swing.JMenuItem();
+        jMenuItem45 = new javax.swing.JMenuItem();
+        jMenuItem46 = new javax.swing.JMenuItem();
+        jMenuItem43 = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -114,11 +135,16 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\aluno\\Downloads\\WHGV-AgenciaDeTurismo-main\\src\\images\\logo linda whgv.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo linda whgv.png"))); // NOI18N
 
         jMenu3.setText("Gerenciar clientes");
 
         jMenuItem7.setText("Inserir Cliente");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem7);
 
         jMenuItem8.setText("Consultar todos os clientes");
@@ -210,33 +236,142 @@ public class GUI extends javax.swing.JFrame {
 
         jMenu6.setText("Gerenciar ofertas");
 
-        jMenuItem22.setText("Inserir Pacote");
+        jMenuItem22.setText("Inserir oferta");
         jMenu6.add(jMenuItem22);
 
-        jMenuItem23.setText("jMenuItem23");
+        jMenuItem23.setText("Consultar todos as ofertas");
+        jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem23ActionPerformed(evt);
+            }
+        });
         jMenu6.add(jMenuItem23);
 
-        jMenuItem24.setText("jMenuItem24");
+        jMenuItem24.setText("Consultar uma oferta");
+        jMenuItem24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem24ActionPerformed(evt);
+            }
+        });
         jMenu6.add(jMenuItem24);
 
-        jMenuItem25.setText("jMenuItem25");
-        jMenu6.add(jMenuItem25);
-
-        jMenuItem26.setText("jMenuItem26");
+        jMenuItem26.setText("Remover uma oferta");
         jMenu6.add(jMenuItem26);
+
+        jMenuItem25.setText("Alterar dados da oferta");
+        jMenu6.add(jMenuItem25);
 
         jMenuBar2.add(jMenu6);
 
-        jMenu7.setText("Gerenciar hospedagem");
-        jMenuBar2.add(jMenu7);
-
         jMenu8.setText("Gerenciar cidade");
+
+        jMenuItem32.setText("Inserir cidade");
+        jMenuItem32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem32ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem32);
+
+        jMenuItem33.setText("Consultar todas as cidades");
+        jMenu8.add(jMenuItem33);
+
+        jMenuItem34.setText("Consultar uma cidade");
+        jMenu8.add(jMenuItem34);
+
+        jMenuItem35.setText("Remover uma cidade");
+        jMenuItem35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem35ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem35);
+
+        jMenuItem40.setText("Alterar dados da cidade");
+        jMenuItem40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem40ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem40);
+
         jMenuBar2.add(jMenu8);
 
         jMenu13.setText("Gerenciar veículo");
+
+        jMenuItem37.setText("Inserir veículo");
+        jMenu13.add(jMenuItem37);
+
+        jMenuItem38.setText("Consultar todos os veículos");
+        jMenu13.add(jMenuItem38);
+
+        jMenuItem39.setText("Consultar um veículo ");
+        jMenu13.add(jMenuItem39);
+
+        jMenuItem41.setText("Remover um veículo");
+        jMenu13.add(jMenuItem41);
+
+        jMenuItem36.setText("Alterar dados do veículo");
+        jMenu13.add(jMenuItem36);
+
         jMenuBar2.add(jMenu13);
 
+        jMenu7.setText("Gerenciar hospedagem");
+
+        jMenuItem27.setText("Inserir hospedagem");
+        jMenu7.add(jMenuItem27);
+
+        jMenuItem28.setText("Consultar todas as hospedagens");
+        jMenu7.add(jMenuItem28);
+
+        jMenuItem29.setText("Consultar uma hospedagem");
+        jMenu7.add(jMenuItem29);
+
+        jMenuItem30.setText("Remover uma hospedagem");
+        jMenuItem30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem30ActionPerformed(evt);
+            }
+        });
+        jMenu7.add(jMenuItem30);
+
+        jMenuItem31.setText("Alterar dados da hospedagem");
+        jMenuItem31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem31ActionPerformed(evt);
+            }
+        });
+        jMenu7.add(jMenuItem31);
+
+        jMenuBar2.add(jMenu7);
+
         jMenu14.setText("Gerenciar pontos turísticos");
+
+        jMenuItem42.setText("Inserir ponto turístico");
+        jMenuItem42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem42ActionPerformed(evt);
+            }
+        });
+        jMenu14.add(jMenuItem42);
+
+        jMenuItem44.setText("Consultar todos os pontos turísticos");
+        jMenu14.add(jMenuItem44);
+
+        jMenuItem45.setText("Consultar um ponto turístico");
+        jMenuItem45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem45ActionPerformed(evt);
+            }
+        });
+        jMenu14.add(jMenuItem45);
+
+        jMenuItem46.setText("Remover um ponto turístico");
+        jMenu14.add(jMenuItem46);
+
+        jMenuItem43.setText("Alterar dados do ponto turístico");
+        jMenu14.add(jMenuItem43);
+
         jMenuBar2.add(jMenu14);
 
         setJMenuBar(jMenuBar2);
@@ -248,14 +383,20 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(495, 495, 495)
                 .addComponent(jLabel1)
-                .addContainerGap(717, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(214, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(85, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(76, 76, 76))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 646, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(582, 582, 582))
         );
 
         pack();
@@ -288,6 +429,47 @@ public class GUI extends javax.swing.JFrame {
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem21ActionPerformed
+
+    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem23ActionPerformed
+
+    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem24ActionPerformed
+
+    private void jMenuItem30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem30ActionPerformed
+
+    private void jMenuItem31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem31ActionPerformed
+
+    private void jMenuItem32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem32ActionPerformed
+
+    private void jMenuItem35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem35ActionPerformed
+
+    private void jMenuItem40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem40ActionPerformed
+
+    private void jMenuItem42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem42ActionPerformed
+
+    private void jMenuItem45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem45ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+       InserirCliente cli = new InserirCliente();
+       cli.setVisible(true);
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,12 +522,13 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     // End of variables declaration                   
-}
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
     private javax.swing.JFrame jFrame3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
@@ -378,6 +561,26 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem25;
     private javax.swing.JMenuItem jMenuItem26;
+    private javax.swing.JMenuItem jMenuItem27;
+    private javax.swing.JMenuItem jMenuItem28;
+    private javax.swing.JMenuItem jMenuItem29;
+    private javax.swing.JMenuItem jMenuItem30;
+    private javax.swing.JMenuItem jMenuItem31;
+    private javax.swing.JMenuItem jMenuItem32;
+    private javax.swing.JMenuItem jMenuItem33;
+    private javax.swing.JMenuItem jMenuItem34;
+    private javax.swing.JMenuItem jMenuItem35;
+    private javax.swing.JMenuItem jMenuItem36;
+    private javax.swing.JMenuItem jMenuItem37;
+    private javax.swing.JMenuItem jMenuItem38;
+    private javax.swing.JMenuItem jMenuItem39;
+    private javax.swing.JMenuItem jMenuItem40;
+    private javax.swing.JMenuItem jMenuItem41;
+    private javax.swing.JMenuItem jMenuItem42;
+    private javax.swing.JMenuItem jMenuItem43;
+    private javax.swing.JMenuItem jMenuItem44;
+    private javax.swing.JMenuItem jMenuItem45;
+    private javax.swing.JMenuItem jMenuItem46;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
